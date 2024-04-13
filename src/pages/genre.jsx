@@ -99,7 +99,7 @@ const getEducationBooks = async () => {
         {books.length != 0 || !books?
         <>
             {books.map((book, index) => (
-                        <div className='w-3/12 min-w-3/12 2xl:w-[190px] 2xl:min-w[190px] relative' key={index}>
+                        <div className='w-3/12 min-w-3/12 lg:w-[190px] 2xl:min-w[190px] relative' key={index}>
                           <a target='blank' href={book.volumeInfo.infoLink} className='absolute w-full h-full'> </a>
                             <div className='w-full'>
                                 <img className={book.volumeInfo.imageLinks != undefined ? 'w-[100%] border' : 'w-[100%] border h-[140px] 2xl:h-[260px]'} src={book.volumeInfo.imageLinks != undefined ? book.volumeInfo.imageLinks.thumbnail : 'a'} />
