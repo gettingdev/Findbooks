@@ -17,10 +17,6 @@ export default function App() {
       errorElement: <h1 className='flex h-[100vh] items-center justify-center text-[40px] bg-black text-white font-bold'>404.</h1>
     },
     {
-      path: '/login',
-      element: <Masuk />
-    },
-    {
       path: '/app',
       element: (
         <Template>
